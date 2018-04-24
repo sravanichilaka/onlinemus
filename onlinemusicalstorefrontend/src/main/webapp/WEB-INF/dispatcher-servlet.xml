@@ -10,7 +10,6 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
        <!-- for auto-detecting the annotations @RequestMapping -->
        <!-- enable spring mvc -->
-       
        <mvc:annotation-driven></mvc:annotation-driven>
        
        <!-- @Componentscan -->
@@ -23,10 +22,21 @@
        <!-- suffix is .jsp -->
        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
        <property name="prefix" value="/WEB-INF/views/"></property>
-       <property name="suffix" value=".jsp"></property>
-       
+       <property name="suffix" value=".jsp"></property>  
        </bean>
-       <mvc:resources location="/WEB-INF/resources/" mapping="/resources/**"></mvc:resources>
        
+       <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+       <property name="maxUploadSize" value="10240000"></property>
+       </bean>
+       <!-- http://localhost:8080/project1frontend/resources/images/niit.jpg 
+       <img src='<c:url value="/resources/images/niit.jpg">'>
+                   /WEB-INF/resources/images/niit.jpg
+       -->
+       <mvc:resources location="/WEB-INF/resources/" mapping="/resources/**"></mvc:resources>
 </beans>
+
+
+
+
+
 

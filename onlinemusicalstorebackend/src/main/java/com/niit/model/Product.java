@@ -27,6 +27,16 @@ private String productdescription;
 private int quantity;
 @Min(value=1,message="minimum price must be 1")
 private double price;
+
+private String color;
+
+
+public String getColor() {
+	return color;
+}
+public void setColor(String color) {
+	this.color = color;
+}
 @ManyToOne
 @JoinColumn(name="cid")
 //FK category_id

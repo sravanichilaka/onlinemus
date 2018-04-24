@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@page isELIgnored="false"%>
@@ -7,7 +8,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
+<script>
+	$(document).ready(function() {
+		var searchCondition = '${searchCondition}';
+		$('.table').DataTable({
+			"lengthMenu" : [ [  5, 7, -1 ], [  5, 7, "All" ] ],
+			"oSearch" : {
+				"sSearch" : searchCondition
+			}
+		})
+	});
+</script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -24,7 +35,10 @@ p = 1 1000.0 Product Description for toy car Toy Car 12
 		<table class="table table-hover" border="2">
 			<thead id="thead">
 				<tr>
+				    <th>Image</th>
 					<th>ProductName</th>
+                    <th>color</th>
+					<th>Category</th>
 					<th>Price</th>
 					<th>Action</th>
 				</tr>
@@ -32,9 +46,13 @@ p = 1 1000.0 Product Description for toy car Toy Car 12
 			<tbody id="tbody">
 				<c:forEach items="${productsAttr }" var="p">
 					<tr>
+					  <td><img src='<c:url value="/resources/images/${p.id }.png" ></c:url>' alt="Image NA" height="50px" width="50px"></td>
 						<!-- p.getProductName() -->
 						<!-- p.getPrice() -->
 						<td>${p.productname }</td>
+                         <td>${p.color }</td>
+						<!-- p.getCategory().getCategoryname() -->
+						<td>${p.category.categoryname }</td>
 						<td>${p.price }</td>
 						<!-- http://...../all/getproduct/1 
 					http://........../all/getproduct/2
@@ -59,5 +77,5 @@ p = 1 1000.0 Product Description for toy car Toy Car 12
 		</table>
 	</div>
 </body>
-</html>
 
+</html>
