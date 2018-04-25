@@ -68,8 +68,10 @@
 					   <a href='<c:url value="/all/searchbycategory?searchCondition=flute"></c:url>'>flute</a>
 					   <a href='<c:url value="/all/searchbycategory?searchCondition=veena"></c:url>'>veena</a>
                     </li>
+                    
 			</ul>
 			</li>
+			<li><a href='<c:url value="/all/registrationform"></c:url>'>Sign Up</a></li>
 			</ul>
 			</div>
 		</div>
