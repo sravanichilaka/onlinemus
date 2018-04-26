@@ -28,7 +28,6 @@ function fillShippingAddress(form){
 		form["shippingaddress.zipcode"].value=""
 	}
 }
-
 $(document).ready(function(){
 	$('#form').validate({
 		rules:{
@@ -51,7 +50,6 @@ $(document).ready(function(){
 		}
 	})
 })
-
 </script>
 </head>
 <body>
@@ -136,5 +134,3 @@ Check this if billing address and shipping address are same</label>
 </div>
 </body>
 </html>
-
-

@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-import javassist.expr.Cast;
+import com.niit.model.BillingAddress;
 @Entity
 public class Customer {
 	@Id
@@ -77,5 +77,3 @@ public void setCart(Cart cart) {
 }
 
 }
-
-

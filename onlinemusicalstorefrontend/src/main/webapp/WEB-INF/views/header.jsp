@@ -3,6 +3,9 @@
      <%@page isELIgnored="false" %>
      <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
      <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+      <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
+
+     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,8 +13,8 @@
 <title>Insert title here</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://localhost:8080/project1frontend/resources/css/table.css">
-<link rel="stylesheet" href="http://localhost:8080/project1frontend/resources/css/navbar.css">
+<link rel="stylesheet" href="http://localhost:8084/onlinemusicalstorefrontend/resources/css/table.css">
+<link rel="stylesheet" href="http://localhost:8084/onlinemusicalstorefrontend/resources/css/navbar.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script
@@ -40,11 +43,11 @@
 			url - http://localhost:8080/project1frontend/resources/images/niit.jpg
 			 -->
 				<a class="navbar-brand" href="">
-		<img src='<c:url value="/resources/images/online.jpg"></c:url>' alt="NIIT" height="30px" width="120px"></a>
+		<img src='<c:url value="/resources/images/digit.jpg"></c:url>' alt="NIIT" height="35px" width="130px" align="center"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="collapse-example">
 			<ul class="nav navbar-nav" id="links">
-				<li ><a href='<c:url value="/home"></c:url>'>Home</a></li>
+				<li ><a href='<c:url value="/"></c:url>'>Home</a></li>
 				<!-- value is for DispatcherServlet
 				DispatcherServlet using the value it has to find the handler method which can handle the request
 				http://localhost:8080/project1frontend/all/getproducts -> DispatcherServlet -> /all/getproducts
@@ -54,7 +57,9 @@
 				/WEB-INF/views/productlist.jsp
 				 -->
 				<li><a href='<c:url value="/all/getproducts"></c:url>'>Browse All Products</a></li>
+				 <security:authorize access="hasRole('ROLE_ADMIN')">
 				<li><a href='<c:url value="/admin/getproductform"></c:url>'>Add Product</a></li>
+				</security:authorize>
 				<li class="dropdown">
 			<a href="" class="dropdown-toggle" data-toggle="dropdown">
                      Select by Category<b class="caret"></b></a>
@@ -63,20 +68,32 @@
 					<!-- Request parameter
 					parameter name is 'searchCondition' -->
 					   <a href='<c:url value="/all/searchbycategory?searchCondition=Guitar"></c:url>'>Guitar</a>
-					   <a href='<c:url value="/all/searchbycategory?searchCondition=violin"></c:url>'>Violin</a>
-					   <a href='<c:url value="/all/searchbycategory?searchCondition=piano"></c:url>'>piano</a>
+					   <a href='<c:url value="/all/searchbycategory?searchCondition= Voilin"></c:url>'>Voilin</a>
+					   <a href='<c:url value="/all/searchbycategory?searchCondition= piano"></c:url>'>piano</a>
+					   <a href='<c:url value="/all/searchbycategory?searchCondition=Veena"></c:url>'>Veena</a>
 					   <a href='<c:url value="/all/searchbycategory?searchCondition=flute"></c:url>'>flute</a>
-					   <a href='<c:url value="/all/searchbycategory?searchCondition=veena"></c:url>'>veena</a>
-                    </li>
-                    
+					
+					   <a href='<c:url value="/all/searchbycategory?searchCondition=All"></c:url>'>All</a>
+                    </li>  
 			</ul>
 			</li>
+			<c:if test="${pageContext.request.userPrincipal.name==null }">
 			<li><a href='<c:url value="/all/registrationform"></c:url>'>Sign Up</a></li>
+			<li><a href='<c:url value="/login"></c:url>'>Sign In</a></li>
+			</c:if>
+			<security:authorize access="hasRole('ROLE_USER')">
+			<c:if test="${pageContext.request.userPrincipal.name!=null }">
+			<li><a href="<c:url value='/cart/purchasedetails'></c:url>"><span class="glyphicon glyphicon-shopping-cart"></span>(${sessionScope.cartSize })</a></li>
+			</c:if>
+				</security:authorize>
+			<li><a href="">Welcome ${pageContext.request.userPrincipal.name}</li></a>
+			<c:if test="${pageContext.request.userPrincipal.name!=null }">
+			<li><a href='<c:url value="/j_spring_security_logout"></c:url>'>Logout</a></li>
+			</c:if>
+			</ul> 
 			</ul>
 			</div>
 		</div>
 	</nav>
 </body>
 </html>
-
-

@@ -6,8 +6,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.niit.model.Authorities;
 import com.niit.model.BillingAddress;
 import com.niit.model.Cart;
+import com.niit.model.CartItem;
 import com.niit.model.Category;
 import com.niit.model.Customer;
+import com.niit.model.CustomerOrder;
 import com.niit.model.Product;
 import com.niit.model.ShippingAddress;
 import com.niit.model.User;
@@ -38,6 +40,7 @@ public class DBConfiguration {
 	    System.out.println("DataSource bean " +dataSource);
 	    return dataSource;
 	}
+	
 	/*
 	 * <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBuilder">
 	 * <property name="dataSource" ref="dataSource">
@@ -55,7 +58,7 @@ public class DBConfiguration {
 		lsf.addProperties(hibernateProperties);
 		//An array of Class objects of all the entities
 		//Map all entities to relational table
-		Class classes[]=new Class[]{Product.class,Category.class,Customer.class,User.class,Authorities.class,BillingAddress.class,ShippingAddress.class,Cart.class};
+		Class classes[]=new Class[]{Product.class,Category.class,User.class,Authorities.class,Customer.class,CartItem.class,Cart.class,ShippingAddress.class,BillingAddress.class,CustomerOrder.class};
 		//localsesionfactorybuilder -> sessionfactory -> map all entities with relation table
 		System.out.println("SessionFactory bean " + lsf);
 	    return lsf.addAnnotatedClasses(classes).buildSessionFactory();
@@ -65,6 +68,5 @@ public class DBConfiguration {
 		return new HibernateTransactionManager(sessionFactory());
 	}
 }
-
 
 

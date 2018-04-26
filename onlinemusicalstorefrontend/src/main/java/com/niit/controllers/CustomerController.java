@@ -24,5 +24,3 @@ public ModelAndView  getRegistrationForm(){
 		return "login";
 	}
 }
-
-

@@ -19,39 +19,39 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="first-slide home-image" src='<c:url value="/resources/images/img3.jpg"></c:url>' alt="first slide" height="100%" width="100%">
+                    <img class="first-slide home-image" src='<c:url value="/resources/images/1.jpg"></c:url>' alt="first slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>WELCOME TO MISICALSTORE</h1>
-                            <p>Here You Can Browse And Buy  Any Music Instrument .Order Now For Your Amazing New Arrivals</p>
+                            <h1 style="color:black ">WELCOME TO THE GADGET STORE</h1>
+                            <p style="color:black">Here You Can Browse And Buy Products.Order Now For Your Amazing New Arrivals</p>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img class="second-slide home-image" src='<c:url value="/resources/images/img2.jpg"></c:url>' alt="Second slide" height="100%" width="100%">
+                    <img class="second-slide home-image" src='<c:url value="/resources/images/2.jpg"></c:url>' alt="Second slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>The  MISICALSTORE .</h1>
-                            <p>online shopping can make your life more easier</p>
+                            <h1 style ="color:black ">The OnlineEmporium Store.</h1>
+                            <p style="color:black ">online shopping can make your life more easier</p>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img class="third-slide home-image " src='<c:url value="/resources/images/img1.jpg"></c:url>' alt="Third slide" height="100%" width="100%">
+                    <img class="third-slide home-image " src='<c:url value="/resources/images/65.jpg"></c:url>' alt="Third slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>The MUSIC  You Love</h1>
-                            <p>Life is one Grand ,sweet song,so start the music!</p>
+                            <h1  style ="color:black ">The Gadget You Love</h1>
+                            <p  style ="color:black ">celebrate the past, present and future of architecture through the gadgets!!</p>
                         </div>
                     </div>
                 </div>
                  <div class="item">
                  <!-- mvc:resources /resources/**  -> /WEB-INF/resources -->
-                    <img class="forth-slide home-image " src='<c:url value="/resources/images/img6.jpg"></c:url>' alt="forth slide" height="100%" width="100%">
+                    <img class="forth-slide home-image " src='<c:url value="/resources/images/3.jpg"></c:url>' alt="forth slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Any Music Instrument can be a "cool" Instrument</h1>
-                            <p>Good Music doesn't have  an Expeiration date!</p>
+                            <h1  style ="color:white "> Any gadget can be a "cool" </h1>
+                            <p  style ="color:white ">your life,your gadget...you own it!!</p>
                         </div>
                     </div>
                 </div>

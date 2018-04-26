@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@page isELIgnored="false"%>
@@ -37,20 +36,18 @@ p = 1 1000.0 Product Description for toy car Toy Car 12
 				<tr>
 				    <th>Image</th>
 					<th>ProductName</th>
-                    <th>color</th>
 					<th>Category</th>
 					<th>Price</th>
 					<th>Action</th>
 				</tr>
 			</thead>
-			<tbody id="tbody">
+			<tbody id="tbody" >
 				<c:forEach items="${productsAttr }" var="p">
 					<tr>
 					  <td><img src='<c:url value="/resources/images/${p.id }.png" ></c:url>' alt="Image NA" height="50px" width="50px"></td>
 						<!-- p.getProductName() -->
 						<!-- p.getPrice() -->
 						<td>${p.productname }</td>
-                         <td>${p.color }</td>
 						<!-- p.getCategory().getCategoryname() -->
 						<td>${p.category.categoryname }</td>
 						<td>${p.price }</td>
@@ -64,10 +61,13 @@ p = 1 1000.0 Product Description for toy car Toy Car 12
 							href='<c:url value="/all/getproduct/${p.id }"></c:url>'> <span
 								class="glyphicon glyphicon-info-sign"></span>
 
-						</a> <a href='<c:url value="/admin/deleteproduct/${p.id }"></c:url>'><span
+						</a> 
+						<security:authorize access="hasRole('ROLE_ADMIN')">
+						<a href='<c:url value="/admin/deleteproduct/${p.id }"></c:url>'><span
 								class="glyphicon glyphicon-trash"></span></a>
 								
 						<a href='<c:url value="/admin/updateproductform/${p.id }"></c:url>'><span class="glyphicon glyphicon-pencil"></span></a>		
+						</security:authorize>
 						</td>
 								
 						

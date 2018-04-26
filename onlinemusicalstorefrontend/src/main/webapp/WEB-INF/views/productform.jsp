@@ -33,12 +33,6 @@
 		<form:errors path="productdescription" cssStyle="color:red"></form:errors>
         </div>
         <div class="form-group">
-		<form:label path="color">Enter product Color</form:label>
-		<!-- product.setProductname('Pen') -->
-		<form:input path="color" class="form-control" style="width:750px"/>
-		<form:errors path="color" cssStyle="color:red"></form:errors>
-        </div>
-        <div class="form-group">
 		<form:label path="quantity">Enter Quantity</form:label>
 		<!-- product.setQuantity(12) -->
 		<form:input path="quantity" class="form-control" style="width:750px"/>
@@ -77,4 +71,3 @@
 	</div>
 </body>
 </html>
-
