@@ -22,8 +22,8 @@
                     <img class="first-slide home-image" src='<c:url value="/resources/images/1.jpg"></c:url>' alt="first slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1 style="color:black ">WELCOME TO THE GADGET STORE</h1>
-                            <p style="color:black">Here You Can Browse And Buy Products.Order Now For Your Amazing New Arrivals</p>
+                            <h1 style="color:black ">WELCOME TO THE MUSICALSTORE</h1>
+                            <p style="color:black">Here You Can Browse And Buy MusicalInstruments.Order Now For Your Amazing New Arrivals</p>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <img class="second-slide home-image" src='<c:url value="/resources/images/2.jpg"></c:url>' alt="Second slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1 style ="color:black ">The OnlineEmporium Store.</h1>
+                            <h1 style ="color:black ">The onlineMusicalStore.</h1>
                             <p style="color:black ">online shopping can make your life more easier</p>
                         </div>
                     </div>
@@ -40,8 +40,8 @@
                     <img class="third-slide home-image " src='<c:url value="/resources/images/65.jpg"></c:url>' alt="Third slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1  style ="color:black ">The Gadget You Love</h1>
-                            <p  style ="color:black ">celebrate the past, present and future of architecture through the gadgets!!</p>
+                            <h1  style ="color:black ">The Music You Love</h1>
+                            <p  style ="color:black "> You Cann't Touch It But It Can Touch you!</p>
                         </div>
                     </div>
                 </div>
@@ -50,8 +50,8 @@
                     <img class="forth-slide home-image " src='<c:url value="/resources/images/3.jpg"></c:url>' alt="forth slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1  style ="color:white "> Any gadget can be a "cool" </h1>
-                            <p  style ="color:white ">your life,your gadget...you own it!!</p>
+                            <h1  style ="color:white "> Any MusicInstrument can be a "cool" </h1>
+                            <p  style ="color:white ">Everything is Better  with MUSIC!!</p>
                         </div>
                     </div>
                 </div>
@@ -69,3 +69,5 @@
 </div>
 </body>
 </html>
+
+<%@ include file="footer.jsp" %> 

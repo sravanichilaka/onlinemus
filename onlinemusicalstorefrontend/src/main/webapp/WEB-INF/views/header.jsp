@@ -67,13 +67,11 @@
 					<li >
 					<!-- Request parameter
 					parameter name is 'searchCondition' -->
-					   <a href='<c:url value="/all/searchbycategory?searchCondition=Guitar"></c:url>'>Guitar</a>
-					   <a href='<c:url value="/all/searchbycategory?searchCondition= Voilin"></c:url>'>Voilin</a>
-					   <a href='<c:url value="/all/searchbycategory?searchCondition= piano"></c:url>'>piano</a>
-					   <a href='<c:url value="/all/searchbycategory?searchCondition=Veena"></c:url>'>Veena</a>
-					   <a href='<c:url value="/all/searchbycategory?searchCondition=flute"></c:url>'>flute</a>
-					
-					   <a href='<c:url value="/all/searchbycategory?searchCondition=All"></c:url>'>All</a>
+					   <a href='<c:url value="/all/searchbycategory?searchCondition= String"></c:url>'>String</a>
+					   <a href='<c:url value="/all/searchbycategory?searchCondition= Percussion"></c:url>'>Percussion</a>
+					   <a href='<c:url value="/all/searchbycategory?searchCondition= Wind"></c:url>'>Wind</a>
+					   <a href='<c:url value="/all/searchbycategory?searchCondition=Keyboard"></c:url>'>Keyboard</a>
+					  <a href='<c:url value="/all/searchbycategory?searchCondition=All"></c:url>'>All</a>
                     </li>  
 			</ul>
 			</li>
