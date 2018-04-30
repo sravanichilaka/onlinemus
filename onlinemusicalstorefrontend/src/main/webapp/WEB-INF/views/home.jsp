@@ -19,7 +19,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="first-slide home-image" src='<c:url value="/resources/images/1.jpg"></c:url>' alt="first slide" height="100%" width="100%">
+                    <img class="first-slide home-image" src='<c:url value="/resources/images/dd1.jpg"></c:url>' alt="first slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1 style="color:black ">WELCOME TO THE MUSICALSTORE</h1>

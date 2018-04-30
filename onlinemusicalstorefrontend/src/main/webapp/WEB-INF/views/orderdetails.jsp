@@ -92,7 +92,11 @@
                         </div>
 
 
+                      <div class ="jumbotton">
                       
+                      <h1> Thank you visit again!!!</h1>
+                      
+                      </div>
                     </div>
              
             </div>

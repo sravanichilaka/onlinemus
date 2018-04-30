@@ -5,7 +5,7 @@
 	border: 1px solid transparent;
 	border-radius: 4px;
 	color: #a94442;
-	background-color: #f2dede;
+	background-color: #ffffff;
 	border-color: #ebccd1;
 }
 .msg {
@@ -14,14 +14,14 @@
 	border: 1px solid transparent;
 	border-radius: 4px;
 	color: #31708f;
-	background-color: #d9edf7;
+	background-color: #ff8000;
 	border-color: #bce8f1;
 }
 #login-box {
 	width: 350px;
 	padding: 20px;
 	margin: 100px auto;
-	background: #34ccff;
+	background: #80ffff;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border: 1px solid #000;

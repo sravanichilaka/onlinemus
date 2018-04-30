@@ -43,7 +43,7 @@
 			url - http://localhost:8080/project1frontend/resources/images/niit.jpg
 			 -->
 				<a class="navbar-brand" href="">
-		<img src='<c:url value="/resources/images/online.jpg"></c:url>' alt="NIIT" height="35px" width="130px" align="center"></a>
+		<img src='<c:url value="/resources/images/tittle.jpg"></c:url>' alt="NIIT" height="35px" width="130px" align="center"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="collapse-example">
 			<ul class="nav navbar-nav" id="links">
