@@ -19,7 +19,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="first-slide home-image" src='<c:url value="/resources/images/dd1.jpg"></c:url>' alt="first slide" height="100%" width="100%">
+                    <img class="first-slide home-image" src='<c:url value="/resources/images/s6.jpg"></c:url>' alt="first slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1 style="color:black ">WELCOME TO THE MUSICALSTORE</h1>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="second-slide home-image" src='<c:url value="/resources/images/2.jpg"></c:url>' alt="Second slide" height="100%" width="100%">
+                    <img class="second-slide home-image" src='<c:url value="/resources/images/s7.jpg"></c:url>' alt="Second slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1 style ="color:black ">The onlineMusicalStore.</h1>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="third-slide home-image " src='<c:url value="/resources/images/65.jpg"></c:url>' alt="Third slide" height="100%" width="100%">
+                    <img class="third-slide home-image " src='<c:url value="/resources/images/s3.jpg"></c:url>' alt="Third slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1  style ="color:black ">The Music You Love</h1>
@@ -47,7 +47,7 @@
                 </div>
                  <div class="item">
                  <!-- mvc:resources /resources/**  -> /WEB-INF/resources -->
-                    <img class="forth-slide home-image " src='<c:url value="/resources/images/3.jpg"></c:url>' alt="forth slide" height="100%" width="100%">
+                    <img class="forth-slide home-image " src='<c:url value="/resources/images/s1.jpg"></c:url>' alt="forth slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1  style ="color:white "> Any MusicInstrument can be a "cool" </h1>
